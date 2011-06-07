@@ -143,6 +143,7 @@ body, select, input, textarea {
   color: #444;
   /* Set your base font here, to apply evenly */
   /* font-family: Georgia, serif;  */
+  font-family: Myriad Pro, Georgia, serif;
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
@@ -175,6 +176,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 #logonav {
     margin: 10px 40px 5px 40px;
+    width: 980px;
 }
 
 #logonav .logo {
@@ -183,8 +185,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 #logonav ul {
     list-style: none;
-    float: right;
-    margin-top: 20px;
+    float: left;
+    margin: 20px 0 0 188px;
 }
 
 #logonav li {
@@ -200,13 +202,13 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 .body {
     margin: 10px 40px 0 40px;
-    border: 2px solid black;
-    height: 343px;
-    width: 880px;
 }
 
 #main .box {
     float: left;
+    height: 348px;
+    border: 2px solid black;
+    width: 880px;
 }
 
 img.sarahbody {
@@ -239,15 +241,27 @@ img.sarahbody {
 
 /** about */
 
+#about .box {
+  position: relative;
+  float: left;
+  height: 346px;
+  border: 2px solid black;
+  width: 880px;
+}
+
 #about .copy {
   float: left;
-  width: 400px;
-  margin: 70px 40px 0 15px;
+  width: 500px;
+  margin: 70px 10px 0 40px;
+}
+
+.copy .title_name {
+  font-size: 24px;
 }
 
 #about .leftflame {
   position: absolute;
-  left: 420px;
+  left: 400px;
   margin-top: 15px;
 }
 
@@ -260,9 +274,44 @@ img.sarahbody {
 #about .sarahbody {
   display: block;
   position: absolute;
-  left: 600px;
+  left: 580px;
+  top: 0px;
 }
 
+/** contact */
+
+#contact .box {
+  float: left;
+  height: 350px;
+  border: 2px solid black;
+  width: 880px;
+}
+
+#contact img.sarahcontact {
+  float: left;
+  margin: 0px 0 0 80px;
+  display: block;
+}
+
+
+#contact div.rightflame {
+  margin: 40px 0 10px 0;
+  float: left;
+}
+
+#contact .copy {
+  float: left;
+  margin: 70px 0 0 10px;
+}
+
+#contact .copy .title_name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#contact .copy .title_desc {
+  font-size: 18px;
+}
 /**
  * Non-semantic helper classes: please define your styles before this section.
  */
