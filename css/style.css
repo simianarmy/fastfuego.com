@@ -143,7 +143,7 @@ body, select, input, textarea {
   color: #444;
   /* Set your base font here, to apply evenly */
   /* font-family: Georgia, serif;  */
-  font-family: Myriad Pro, Georgia, serif;
+  font-family: 'Open Sans', Georgia, serif;
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
@@ -219,7 +219,7 @@ img.sarahbody {
     float: left;
     width: 260px;
     margin: 130px 15px 0 15px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #main .imagegrid {
