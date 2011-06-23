@@ -168,6 +168,10 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 /** nav header */
 
+a.facebook {
+  float: right;
+}
+
 .topbluebar {
     background: url(/img/top_blue_bar.jpg) no-repeat;
     width: 100%;
@@ -198,17 +202,27 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
     display: inline;
 }
 
-/** home */
-
-.body {
+.body, footer {
     margin: 10px 40px 0 40px;
 }
 
+.links {
+  margin: 5px 0 0 900px;
+  float: left;
+}
+
+.box {
+  position: relative;
+  float: left;
+  height: 348px;
+  border: 2px solid black;
+  width: 880px;
+}
+
+/** home */
+
 #main .box {
-    float: left;
-    height: 348px;
-    border: 2px solid black;
-    width: 880px;
+    
 }
 
 img.sarahbody {
@@ -242,11 +256,7 @@ img.sarahbody {
 /** about */
 
 #about .box {
-  position: relative;
-  float: left;
   height: 346px;
-  border: 2px solid black;
-  width: 880px;
 }
 
 #about .copy {
@@ -281,15 +291,12 @@ img.sarahbody {
 /** contact */
 
 #contact .box {
-  float: left;
   height: 350px;
-  border: 2px solid black;
-  width: 880px;
 }
 
 #contact img.sarahcontact {
   float: left;
-  margin: 0px 0 0 80px;
+  margin: 0px 0 0 40px;
   display: block;
 }
 
@@ -312,6 +319,196 @@ img.sarahbody {
 #contact .copy .title_desc {
   font-size: 18px;
 }
+
+/** traininig  */
+
+#training .box {
+  height: 400px;
+}
+
+#training .copy {
+  float: left;
+  width: 500px;
+  margin: 10px 10px 0 40px;
+  font-size: 12px;
+}
+
+#training .copy .title_name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#training .leftflame {
+  position: absolute;
+  left: 400px;
+  margin-top: 15px;
+}
+
+#training .leftflame img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#training .sarahbody {
+  display: block;
+  position: absolute;
+  left: 580px;
+  top: 0px;
+}
+
+/** nutrition */
+
+#nutrition .box {
+  height: 400px;
+}
+
+#nutrition .copy {
+  float: left;
+  width: 350px;
+  margin: 30px 10px 0 40px;
+  font-size: 13px;
+}
+
+#nutrition .copy .title_name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#nutrition .leftflame {
+  position: absolute;
+  left: 430px;
+  margin-top: 15px;
+}
+
+#nutrition .leftflame img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#nutrition .sarahbody {
+  display: block;
+  position: absolute;
+  left: 430px;
+  top: 30px;
+}
+
+/** gallery */
+
+#gallery .box {
+  height: 1100px;
+}
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 700px;
+	height:120px;
+
+	/* custom decorations */
+	border:1px solid #ccc;
+	background:url(/img/h300.png) repeat-x;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div {
+	float:left;
+	width:800px;
+}
+
+/* single scrollable item */
+.scrollable img {
+	float:left;
+	margin:20px 5px 20px 21px;
+	background-color:#fff;
+	padding:2px;
+	border:1px solid #ccc;
+	width:100px;
+	height:75px;
+	
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+/* active item */
+.scrollable .active {
+	border:2px solid #000;
+	position:relative;
+	cursor:default;
+}
+
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float:left;	
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+	background:url(/img/hori_large.png) no-repeat;
+	display:block;
+	width:30px;
+	height:30px;
+	float:left;
+	margin:40px 10px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+/* right */
+a.right 				{ background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover 		{ background-position:-30px -30px; }
+a.right:active 	{ background-position:-60px -30px; } 
+
+
+/* left */
+a.left				{ margin-left: 40px; } 
+a.left:hover  		{ background-position:-30px 0; }
+a.left:active  	{ background-position:-60px 0; }
+
+/* up and down */
+a.up, a.down		{ 
+	background:url(/img/vert_large.png) no-repeat; 
+	float: none;
+	margin: 10px 50px;
+}
+
+/* up */
+a.up:hover  		{ background-position:-30px 0; }
+a.up:active  		{ background-position:-60px 0; }
+
+/* down */
+a.down 				{ background-position: 0 -30px; }
+a.down:hover  		{ background-position:-30px -30px; }
+a.down:active  	{ background-position:-60px -30px; } 
+
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+} 	
+
+/** footer */
+
 /**
  * Non-semantic helper classes: please define your styles before this section.
  */
